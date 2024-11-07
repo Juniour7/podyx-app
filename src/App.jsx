@@ -7,6 +7,13 @@ import DashBoardLayout from './Layout/DashBoardLayout';
 
 //Pages
 import DashboardHome from './Pages/DashboardHome';
+import Availability from './Pages/Availability';
+import BaseServices from './Pages/BaseServices';
+import AdditionalServices from './Pages/AdditionalServices';
+import Setups from './Pages/Setups';
+import Rooms from './Pages/Rooms';
+import StudioSettings from './Pages/StudioSettings';
+import TermsConditions from './Pages/TermsConditions';
 
 function App() {
 
@@ -16,6 +23,15 @@ function App() {
         <Routes>
           <Route element={<DashBoardLayout />}>
             <Route path='/dashboard' element={<DashboardHome />} />
+            <Route path='/availability' element={<Availability />} />
+            <Route path='/base-services' element={<BaseServices />} />
+            <Route path='/additional-services' element={<AdditionalServices />} />
+            <Route path='/setups' element={<Setups />} />
+            <Route path='/rooms' element={<Rooms />} />
+            <Route path='/studio-settings' element={<StudioSettings />} />
+            <Route path='/terms-conditions' element={<TermsConditions />} />
+
+
           </Route>
         </Routes>
       </Router>

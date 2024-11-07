@@ -19,7 +19,7 @@ const ProfileDropdown = () => {
                 onClick={toggleDropdown}
                 className="flex items-center px-4 py-2  text-white font-semibold rounded-lg "
             >
-                <span className="text-2xl">
+                <span className="text-2xl transition duration-500">
                 {isOpen ? <FiChevronUp /> : <FiChevronDown />}
                 </span>
             </button>

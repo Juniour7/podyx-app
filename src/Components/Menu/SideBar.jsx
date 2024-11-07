@@ -10,25 +10,25 @@ const SideBar = () => {
   const toggleSidebar = () => setIsOpen(!isOpen);
   return (
     <>
-        <aside
-            className={`bg-[#0F0F14] text-white min-h-full transition-all duration-300 ${
-            isOpen ? 'w-64' : 'w-16'
-            } fixed`}
-        >
-            {/* Sidebar Menu */}
-            <nav className="pt-4 flex-1">
-                <ul>
-                    <li className="py-2 px-4 hover:bg-gray-700">
-                        <Link to="/dashboard">Home</Link>
-                    </li>
-                    <li className="py-2 px-4 hover:bg-gray-700">
-                        <Link to="/reports">Reports</Link>
-                    </li>
-                    <li className="py-2 px-4 hover:bg-gray-700">
-                        <Link to="/settings">Settings</Link>
-                    </li>
-                </ul>
-            </nav>
+      <aside
+        className={`bg-[#0F0F14] text-white min-h-full transition-all duration-300 ${
+        isOpen ? 'w-64' : 'w-16'
+        } fixed`}
+      >
+        {/* Sidebar Menu */}
+        <nav className="pt-4 flex-1 px-3">
+          <ul>
+            <li className="py-2 px-4 hover:bg-gray-700">
+              
+            </li>
+            <li className="py-2 px-4 hover:bg-gray-700">
+              <Link to="/reports"></Link>
+            </li>
+            <li className="py-2 px-4 hover:bg-gray-700">
+              <Link to="/settings">Settings</Link>
+            </li>
+          </ul>
+        </nav>
 
         {/* Toggle Button */}
         <button
