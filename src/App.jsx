@@ -6,6 +6,7 @@ import './App.css';
 import DashBoardLayout from './Layout/DashBoardLayout';
 
 //Pages
+import Home from './Pages/Home';
 import DashboardHome from './Pages/DashboardHome';
 import Availability from './Pages/Availability';
 import BaseServices from './Pages/BaseServices';
@@ -21,6 +22,7 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route path='/' element={<Home />} />
           <Route element={<DashBoardLayout />}>
             <Route path='/dashboard' element={<DashboardHome />} />
             <Route path='/availability' element={<Availability />} />
